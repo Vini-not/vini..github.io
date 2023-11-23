@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  font-family: 'Inter', sans-serif;
+}
+body{
+  background-color:rgb(254, 254, 254)
+}
+section,footer{
+  padding: 54px 0;
+}
+h3{
+  font-size: 50px;
+}
+p{
+  color: #935020;
+}
+.conti{
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+.btn{
+  background-color: #deb887;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.1s;
+
+}
+.btn.animate-bnt{
+  animation: animate-outline 1s ease-out infinite;
+}
+.btn:hover{
+  background-color:rgb(141, 96, 54);
+}
+@keyframes animate-outline {
+  from{
+    outline: 0px solid rgba(247, 162, 53, 0.639);
+  }
+  to{
+    outline: 15px solid #deb8875b;
+  }
+}
+header{
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+
+}
+nav ul{
+  display:flex;
+  align-items: center;
+}
+nav ul a{
+  color:white;
+  margin: 0 25px;
+  text-transform: uppercase;
+  font-size: 13px;
+  display: block;
+}
+nav ul a::after{
+  content: "";
+  background-color: #CD853F;
+  height: 3px;
+  width: 0%;
+  display: block;
+  margin: 0 auto;
+  transition: 0.3s;
+}
+nav ul a:hover::after{
+  width: 100%;
+}
+
+/*menu mobile*/
+nav .menu-icon{
+  cursor: pointer;
+  font-size: 25px;
+  color:#CD853F;
+  display: none;
+}
+
+nav .close-icon{
+  display: none;
+  font-size: 30px;
+  color: white;
+}
+
+/*fim menu mobile*/
+
+.banner{
+  display: flex;
+  justify-content: center;
+}
+.banner .ban{
+  margin: 150px;
+  text-align: center;
+  padding: 0 90px;
+}
+.banner .ban h1{
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  font-size: 90px;
+  color:#CD853F;
+}
+.banner .ban p{
+  font-size: 20px;
+  font-weight:normal;
+}
+.faca-mais .conti{
+  display: flex;
+  align-items: center;
+
+}
+.faca-mais .faca-mais-texto{
+  width: 50%;
+  padding: 0 40px;
+
+}
+.faca-mais .faca-mais-texto h3{
+  font-size: 56px;
+  
+}.faca-mais .faca-mais-texto p{
+  margin: 5px o 10px o;
+}
+.faca-mais .faca-mais-img{
+  width: 50%;
+  
+} .faca-mais .faca-mais-img img{
+  width: 100%;
+}
+.depoimento h3{
+  text-align: center;
+}
+.depoimento p{
+  margin-bottom: 20px;
+  text-align: center;
+}
+.card{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.depoimento .card-item{
+  background-color:#deb887;
+  margin: 5px;
+  border-radius: 14px;
+  text-align: center;
+  width: 350px;
+  transition: 0.3s;
+}
+.depoimento .card-item img{
+  border-radius: 100%;
+  width: 10-20px;
+  display: block;
+  margin: 20px auto;
+}
+.depoimento .card-item .nome-user{
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 23px;
+  transition: 0.3s;
+}
+.depoimento .card-item .depoimento-user{
+  font-size: 15px;
+  padding: 0 15px;
+  transition: 0.3s;
+}
+.depoimento .card-item .estrela{
+  margin: 15px 0;
+  border-top: 2px solid rgba(210, 105, 30, 0.603);
+}
+.depoimento .card-item .estrela i{
+  font-size: 16px;
+}
+.depoimento .card-item:hover{
+  background-color:#CD853F;
+  margin-top: -5px;
+}
+.depoimento .card-item:hover .nome-user,
+.depoimento .card-item:hover .depoimento-user{
+  color: white;
+}
+.footer{
+  background-color: #deb887;
+  font-size: 17px;
+  text-align: center;
+}
+.footer i{
+  color: #935020;
+  padding: 7px;
+  margin: 1px;
+  border-radius: 10px;
+  background-color: white;
+  transition: 0.3s;
+}
+.footer i:hover{
+  background-color: #CD853F;
+  color: white;
+}
+.footer p{
+  margin-top: 10px;
+}
+/*Pagina Sobre*/
+.sobre .conti{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sobre .sobre-texto{
+  width: 50%;
+  padding-right: 40px;
+}
+.sobre .sobre-texto p{
+  margin: 18px 0;
+}
+.sobre .sobre-img{
+  width: 50%;
+}
+.sobre .sobre-img img{
+  width: 100%;
+  border-radius: 10px;
+  
+}
+
+/*Final Pagina Sobre/*/
+
+/*cardapio*/
+.cardapio .conti h3{
+  font-size: 75px;
+  font-family: cursive;
+  justify-content: center;
+  text-align: center;
+  color: #935020;
+}
+
+.cardapio .conti p{
+  text-align: center;
+  border-radius: 26px;
+  font-size: 15px;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Isso centraliza os itens horizontalmente */
+}
+
+.cafe-item {
+  border: 1px solid chocolate;
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  background-color: #cd863f9e;
+  transition: 0.3s;
+}
+.cafe-item:hover{
+  border: #935020 solid 1px;
+  background-color: #deb887be;
+}
+
+.cafe-title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.cafe-description {
+  color: #555555;
+}
+
+.cafe-price {
+  font-weight: bold;
+  color: #008000; /* cor verde para os preços */
+}
+
+.produto{
+  margin: 20px 0;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.produto .produto-text h3{
+  display: block;
+  justify-content: center;
+  font-size: 60px;
+  font-family: cursive;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.produto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.produto-img {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 85%;
+}
+.produto .produto-img img{
+  width: 100%;
+  max-width: 350px;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+/*fim cardapio*/
+/*Contato*/
+.contato-info{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.contato-info .left-side{
+  width: 50%;
+  padding: 30px;
+  background-color: #deb887;
+  border-radius: 40px;
+  margin-right: 50px;
+  height: fit-content;
+}
+.contato-info .left-side div{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.contato-info .left-side div i{
+  font-size: 23px;
+  margin-right: 17px;
+  color: white;
+}
+.contato-info .left-side p{
+  font-size: 17px;
+  color: white;
+}
+.contato-info .right-side{
+  width: 50%;
+}
+.contato-info .right-side input{
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  height: 47px;
+  padding: 15px;
+  border-radius: 9px;
+  transition: 0.3s;
+  border: 1px solid #935020;
+  color: rgb(3, 3, 3);
+  font-weight: lighter;
+}
+.contato-info .right-side input:focus,
+.contato-info .right-side textarea:focus{
+  border-color: #935020;
+
+}
+.contato-info .right-side textarea{
+  border: 1px solid #CD853F;
+  color: black;
+  border-radius: 9px;
+  margin-bottom: 10px;
+  padding: 15px;
+  width: 100%;
+  transition: 0.3s;
+  resize: none;
+}
+.contato-info .right-side button{
+  border: none;
+}
+
+/*Sobre o proprietario*/
+
+.proprietario{
+  margin: 20px 0;
+  text-align: center;
+  padding: 0 40px;
+}
+
+.proprietario .proprietario-image img {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 10px;
+}
+.proprietario .proprietario-text h3{
+  font-family:monospace;
+  margin-top: 40px;
+}
+.proprietario .proprietario-text p{
+  font-size: 15px;
+  margin: 5px o 10px o;
+}
+
+/*fim de sobre o proprietario*/
+
+/*fim contato*/
+@media(max-width: 830px){
+  /*menu-mobile*/
+  ul{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:#deb887;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    clip-path: circle(0% at 100% 0);
+    transition: 0.5s;
+  }
+  .ul.open{
+    clip-path: circle(141.4% at 100% 0);
+  }
+  .ul a{
+    margin: 10px 0;
+    font-size: 16px; 
+  }
+  nav .menu-icon{
+    display: block;
+  }
+  nav .close-icon{
+    display: block;
+    position: absolute;
+    top: 46px;
+    right: 28px;
+  }
+  .faca-mais .faca-mais-texto{
+    margin-top: 10px;
+    padding: 0 20px;
+    order: 1;
+  }
+  .faca-mais .conti{
+    flex-direction: column;
+    
+  }
+  .faca-mais .faca-mais-texto{
+    font-size: 48px;
+  }
+  .faca-mais .faca-mais-texto,
+  .faca-mais .faca-mais-img{
+    width: 100%;
+  }
+  .banner .ban{
+    padding: 0;
+    margin: 60px;
+  }
+  .banner .ban h1{
+    font-size: 80px;
+  }
+  .banner .ban p{
+    font-size: 15px;
+  }
+  .depoimento .cafe-item{
+    width: 100%;
+  }
+  .sobre .conti{
+    flex-direction: column;
+  }
+  .sobre .sobre-texto{
+    margin-top: 40px;
+    order: 1;
+  }
+  .sobre .sobre-img,
+  .sobre .sobre-texto{
+    width: 100%;
+  }
+  .contato .contato-info{
+    flex-direction: column-reverse;
+  }
+  .contato-info .right-side,
+  .contato-info .left-side{
+    width: 100%;
+  }
+  .contato-info .right-side{
+    margin-bottom: 30px;
+  }
+  .proprietario .proprietario-text h3{
+    font-size: 40px;
+  }
+}
